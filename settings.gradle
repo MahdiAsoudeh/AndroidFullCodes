@@ -1,0 +1,2 @@
+rootProject.name='FullCodes'
+include ':app'
