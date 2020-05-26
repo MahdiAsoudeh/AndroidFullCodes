@@ -2,9 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mahdi20.fullcodes">
 
-    <!--alarm manager-->
+    <!--    alarm manager-->
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!--    sms receiver-->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
 
     <application
@@ -24,10 +28,18 @@
 
         <activity android:name=".recyclerviewExample.RecyclerViewActivity" />
         <activity android:name=".asyncTaskExample.AsyncTaskActivity" />
+
+        <!--        event bus-->
         <activity android:name=".eventBusExample.EventBusActivity" />
         <service android:name=".eventBusExample.MyService" />
 
-        <!--alarm manager-->
+        <!--       job scheduler-->
+        <activity android:name=".jobSchedulerExample.JobSchedulerActivity" />
+        <service
+            android:name=".jobSchedulerExample.TestJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <!--       alarm manager-->
         <activity android:name=".alarmManagerExample.AlarmManagerActivity" />
         <activity android:name=".alarmManagerExample.ReminderActivity" />
 
@@ -35,6 +47,14 @@
             android:name=".alarmManagerExample.AlarmManagerReceiver"
             android:enabled="true"
             android:exported="true" />
+
+        <!--        sms receiver-->
+        <receiver android:name=".broadcastReceiverExample.sms.SmsListener">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
 
     </application>
 
