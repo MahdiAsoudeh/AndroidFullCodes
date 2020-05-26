@@ -24,6 +24,8 @@
 
         <activity android:name=".recyclerviewExample.RecyclerViewActivity" />
         <activity android:name=".asyncTaskExample.AsyncTaskActivity" />
+        <activity android:name=".eventBusExample.EventBusActivity" />
+        <service android:name=".eventBusExample.MyService" />
 
         <!--alarm manager-->
         <activity android:name=".alarmManagerExample.AlarmManagerActivity" />

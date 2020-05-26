@@ -27,4 +27,13 @@
         android:layout_marginTop="8dp"
         android:text="alarm manager example" />
 
+
+    <Button
+        android:id="@+id/eventBusBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="event bus example" />
+
+
 </LinearLayout>
