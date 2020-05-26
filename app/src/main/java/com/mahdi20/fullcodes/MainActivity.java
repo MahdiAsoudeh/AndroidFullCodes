@@ -5,7 +5,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mahdi20.fullcodes.asyncTaskExample.AsyncTaskExample;
+import com.mahdi20.fullcodes.alarmManagerExample.AlarmManagerActivity;
+import com.mahdi20.fullcodes.asyncTaskExample.AsyncTaskActivity;
 import com.mahdi20.fullcodes.recyclerviewExample.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         findViewById(R.id.asyncBtn).setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, AsyncTaskExample.class);
+            Intent intent = new Intent(MainActivity.this, AsyncTaskActivity.class);
+            startActivity(intent);
+        });
+
+        findViewById(R.id.alarmManagerBtn).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AlarmManagerActivity.class);
             startActivity(intent);
         });
 

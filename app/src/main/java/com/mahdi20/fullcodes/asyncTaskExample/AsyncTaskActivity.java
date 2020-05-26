@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.mahdi20.fullcodes.R;
 
-public class AsyncTaskExample extends AppCompatActivity {
+public class AsyncTaskActivity extends AppCompatActivity {
     private Button button;
     private EditText time;
     private TextView finalResult;
@@ -65,7 +65,7 @@ public class AsyncTaskExample extends AppCompatActivity {
 
         @Override
         protected void onPreExecute() {
-            progressDialog = ProgressDialog.show(AsyncTaskExample.this,
+            progressDialog = ProgressDialog.show(AsyncTaskActivity.this,
                     "ProgressDialog",
                     "Wait for " + time.getText().toString() + " seconds");
         }

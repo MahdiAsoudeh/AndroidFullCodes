@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mahdi20.fullcodes">
 
+    <!--alarm manager-->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,7 +23,16 @@
         </activity>
 
         <activity android:name=".recyclerviewExample.RecyclerViewActivity" />
-        <activity android:name=".asyncTaskExample.AsyncTaskExample" />
+        <activity android:name=".asyncTaskExample.AsyncTaskActivity" />
+
+        <!--alarm manager-->
+        <activity android:name=".alarmManagerExample.AlarmManagerActivity" />
+        <activity android:name=".alarmManagerExample.ReminderActivity" />
+
+        <receiver
+            android:name=".alarmManagerExample.AlarmManagerReceiver"
+            android:enabled="true"
+            android:exported="true" />
 
     </application>
 
