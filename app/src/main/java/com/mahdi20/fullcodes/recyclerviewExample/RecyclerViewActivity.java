@@ -1,4 +1,4 @@
-package com.mahdi20.fullcodes.recyclerview;
+package com.mahdi20.fullcodes.recyclerviewExample;
 
 import android.os.Bundle;
 import android.view.View;

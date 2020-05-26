@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".recyclerview.RecyclerViewActivity"/>
+        <activity android:name=".recyclerviewExample.RecyclerViewActivity" />
+        <activity android:name=".asyncTaskExample.AsyncTaskExample" />
 
     </application>
 

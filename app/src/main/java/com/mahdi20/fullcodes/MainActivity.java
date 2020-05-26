@@ -1,12 +1,12 @@
 package com.mahdi20.fullcodes;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
-import com.mahdi20.fullcodes.recyclerview.RecyclerViewActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.mahdi20.fullcodes.asyncTaskExample.AsyncTaskExample;
+import com.mahdi20.fullcodes.recyclerviewExample.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.rcyBtn).setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+            startActivity(intent);
+        });
+
+        findViewById(R.id.asyncBtn).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AsyncTaskExample.class);
             startActivity(intent);
         });
 
