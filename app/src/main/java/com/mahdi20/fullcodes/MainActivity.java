@@ -10,6 +10,7 @@ import com.mahdi20.fullcodes.asyncTaskExample.AsyncTaskActivity;
 import com.mahdi20.fullcodes.eventBusExample.EventBusActivity;
 import com.mahdi20.fullcodes.jobSchedulerExample.JobSchedulerActivity;
 import com.mahdi20.fullcodes.recyclerviewExample.RecyclerViewActivity;
+import com.mahdi20.fullcodes.retrofit.RetrofitActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.jobBtn).setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, JobSchedulerActivity.class);
+            startActivity(intent);
+        });
+
+
+        findViewById(R.id.retrofitBtn).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, RetrofitActivity.class);
             startActivity(intent);
         });
 
