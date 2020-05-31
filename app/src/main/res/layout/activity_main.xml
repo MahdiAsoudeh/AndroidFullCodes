@@ -6,50 +6,89 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/rcyBtn"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="recycler View example" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/asyncBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="async task example" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/alarmManagerBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="alarm manager example" />
+            <Button
+                android:id="@+id/rcyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="recycler View example" />
+
+            <Button
+                android:id="@+id/asyncBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="async task example" />
+
+            <Button
+                android:id="@+id/alarmManagerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="alarm manager example" />
+
+            <Button
+                android:id="@+id/eventBusBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="event bus example" />
+
+            <Button
+                android:id="@+id/jobBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="job scheduler example" />
+
+            <Button
+                android:id="@+id/retrofitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="retrofit example" />
+
+            <Button
+                android:id="@+id/intentServiceBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="intent service example" />
+
+            <Button
+                android:id="@+id/backgroundServiceBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="background service example" />
+
+            <Button
+                android:id="@+id/foregroundServiceBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="foreground service example" />
 
 
-    <Button
-        android:id="@+id/eventBusBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="event bus example" />
+            <Button
+                android:id="@+id/boundServiceBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="bound service example" />
 
 
-    <Button
-        android:id="@+id/jobBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="job scheduler example" />
-
-
-    <Button
-        android:id="@+id/retrofitBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="retrofit example" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

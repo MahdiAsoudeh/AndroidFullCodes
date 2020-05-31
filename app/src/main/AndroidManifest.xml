@@ -14,6 +14,12 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
+    <!--    save downloaded files            -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--    this is for foreground service-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
 
     <application
         android:name="com.mahdi20.codes.App"
@@ -60,7 +66,7 @@
             </intent-filter>
         </receiver>
 
-
+        <!--        net receiver-->
         <receiver android:name=".broadcastReceiverExample.net.NetworkReceiver">
             <intent-filter>
                 <action
@@ -69,11 +75,20 @@
             </intent-filter>
         </receiver>
 
+        <!--        retrofit activity-->
+        <activity android:name=".retrofitExample.RetrofitActivity" />
 
-        <activity android:name=".retrofit.RetrofitActivity" />
+        <!--        test  services   -->
+        <activity android:name=".serviceExample.boundService.BoundActivity" />
+        <activity android:name=".serviceExample.intentService.IntentServiceActivity" />
+        <activity android:name=".serviceExample.startedService.background.BackActivity" />
+        <activity android:name=".serviceExample.startedService.foreground.ForeActivity" />
 
-        <service android:name="com.mahdi20.codes.startedService.MahdiService" />
-        <service android:name="com.mahdi20.codes.intentService.MahdiIntentService" />
+        <service android:name=".serviceExample.boundService.BoundService" />
+        <service android:name=".serviceExample.intentService.DownloadService" />
+        <service android:name=".serviceExample.startedService.background.BackService" />
+        <service android:name=".serviceExample.startedService.foreground.ForeService" />
+
 
     </application>
 
